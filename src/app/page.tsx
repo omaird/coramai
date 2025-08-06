@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Hero } from "@/components/ui/hero";
 import { MarqueeDemo } from "@/components/ui/marquee-demo";
+import { FeatureDemo } from "@/components/ui/demo";
 import { 
   Search, 
   Shield, 
@@ -86,6 +87,9 @@ export default function Home() {
 
       {/* Logo Marquee */}
       <MarqueeDemo />
+
+      {/* Feature Component */}
+      <FeatureDemo />
 
       {/* Features Navigation */}
       <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50">
