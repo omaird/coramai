@@ -4,20 +4,11 @@ import { Badge } from "@/components/ui/badge";
 import { Hero } from "@/components/ui/hero";
 import { MarqueeDemo } from "@/components/ui/marquee-demo";
 import { FeatureDemo } from "@/components/ui/demo";
+import { FeaturesSectionWithHoverEffects } from "@/components/ui/feature-section-with-hover-effects";
 import { 
   Search, 
-  Shield, 
-  Camera, 
   Users, 
-  Download, 
-  Share, 
-  Clock, 
-  Lock,
   Zap,
-  Eye,
-  FileText,
-  CheckCircle,
-  Star,
   Menu,
   ChevronDown
 } from "lucide-react";
@@ -157,29 +148,7 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Key Features</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {[
-              { icon: Search, title: "Search in seconds" },
-              { icon: Share, title: "Share via SMS or email" },
-              { icon: Shield, title: "Proactive alerts" },
-              { icon: Eye, title: "Custom walls & kiosks" },
-              { icon: Clock, title: "10 minutes setup" },
-              { icon: Camera, title: "Supports 100+ IP cameras" },
-              { icon: Lock, title: "SOC 2 Type II" },
-              { icon: Download, title: "Up to 90 days of storage" },
-              { icon: Users, title: "Role based access control" },
-              { icon: CheckCircle, title: "Live support" },
-              { icon: FileText, title: "People analytics" },
-              { icon: Star, title: "Unlimited video archiving" }
-            ].map((feature, index) => (
-              <Card key={index} className="text-center">
-                <CardContent className="pt-6">
-                  <feature.icon className="h-8 w-8 text-blue-600 mx-auto mb-3" />
-                  <p className="font-medium">{feature.title}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <FeaturesSectionWithHoverEffects />
         </div>
       </section>
 
