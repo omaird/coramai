@@ -6,9 +6,6 @@ import { MarqueeDemo } from "@/components/ui/marquee-demo";
 import { FeatureDemo } from "@/components/ui/demo";
 import { FeaturesSectionWithHoverEffects } from "@/components/ui/feature-section-with-hover-effects";
 import { 
-  Search, 
-  Users, 
-  Zap,
   Menu,
   ChevronDown
 } from "lucide-react";
@@ -94,55 +91,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Main Features */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Search in seconds with Discover
-              </h2>
-              <p className="text-lg text-gray-600 mb-6">
-                With Discover, type what you want, and get the video clip in seconds. 
-                It&apos;s ChatGPT built right into video search.
-              </p>
-            </div>
-            <div className="bg-gray-100 rounded-lg p-8 flex items-center justify-center">
-              <Search className="h-24 w-24 text-blue-600" />
-            </div>
-          </div>
 
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
-            <div className="bg-gray-100 rounded-lg p-8 flex items-center justify-center order-2 md:order-1">
-              <Users className="h-24 w-24 text-blue-600" />
-            </div>
-            <div className="order-1 md:order-2">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Track journey of people and assets
-              </h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Automatically search for the same person or asset across multiple cameras. 
-                See how they traveled across the facility and archive the clips.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Fast video scrubbing
-              </h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Do you know the scene you&apos;re looking for? Scrub video clips quickly 
-                with modern-style thumbnails and fast video loading.
-              </p>
-            </div>
-            <div className="bg-gray-100 rounded-lg p-8 flex items-center justify-center">
-              <Zap className="h-24 w-24 text-blue-600" />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Key Features Grid */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
